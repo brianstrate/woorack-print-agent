@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WooRackPrintAgent")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e0089af2d93a832b6cd3f617c50a740ee2dd38f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3ee3ada72807c290abd2a5c783d7d0b65eacb944")]
 [assembly: System.Reflection.AssemblyProductAttribute("WooRackPrintAgent")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WooRackPrintAgent")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

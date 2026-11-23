@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "iVplU3OhERs=",
+  "dgSpecHash": "cs6GRGBB/gw=",
   "success": true,
   "projectFilePath": "C:\\Mine_kode_projecter\\woorack-print-agent\\WooRackPrintConfig\\WooRackPrintConfig.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bs\\.nuget\\packages\\minver\\6.0.0\\minver.6.0.0.nupkg.sha512",
-    "C:\\Users\\bs\\.nuget\\packages\\system.serviceprocess.servicecontroller\\10.0.0\\system.serviceprocess.servicecontroller.10.0.0.nupkg.sha512"
+    "C:\\Users\\bs\\.nuget\\packages\\system.serviceprocess.servicecontroller\\10.0.0\\system.serviceprocess.servicecontroller.10.0.0.nupkg.sha512",
+    "C:\\Users\\bs\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.13\\microsoft.netcore.app.runtime.win-x64.10.0.13.nupkg.sha512",
+    "C:\\Users\\bs\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.13\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.13.nupkg.sha512",
+    "C:\\Users\\bs\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.13\\microsoft.aspnetcore.app.runtime.win-x64.10.0.13.nupkg.sha512"
   ],
   "logs": []
 }

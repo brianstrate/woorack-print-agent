@@ -1,0 +1,7 @@
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\WooRackPrintConfig.exe
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\WooRackPrintConfig.dll
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\WooRackPrintConfig.runtimeconfig.json
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\WooRackPrintConfig.pdb
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\System.ServiceProcess.ServiceController.dll
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\runtimes\win\lib\net10.0\System.ServiceProcess.ServiceController.dll
+C:\Mine_kode_projecter\woorack-print-agent\WooRackPrintConfig\bin\Release\net10.0-windows\publish\WooRackPrintConfig.deps.json

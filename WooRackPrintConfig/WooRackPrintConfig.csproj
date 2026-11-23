@@ -9,7 +9,16 @@
     <AssemblyName>WooRackPrintConfig</AssemblyName>
     <RootNamespace>WooRackPrintConfig</RootNamespace>
     <MinVerTagPrefix>v</MinVerTagPrefix>
+    
   </PropertyGroup>
+
+  <PropertyGroup>
+  <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+  <ApplicationIcon>assets\woorack-print-agent.ico</ApplicationIcon>
+</PropertyGroup>
 
   <ItemGroup>
     <Compile Include="..\Shared\*.cs" Link="Shared\%(Filename)%(Extension)" />

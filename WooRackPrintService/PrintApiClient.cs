@@ -9,25 +9,27 @@ public class PrintApiClient
     private readonly HttpClient _http;
 
     public PrintApiClient()
+{
+    _http = new HttpClient
     {
-        _http = new HttpClient
-        {
-            Timeout = TimeSpan.FromSeconds(15)
-        };
-    }
+        Timeout = TimeSpan.FromSeconds(15)
+    };
+    _http.DefaultRequestHeaders.UserAgent.ParseAdd("WooRackPrintAgent/1.0");
+}
 
     private static string BuildUrl(string storeUrl, string route, string token)
+{
+    var baseUrl = storeUrl.Trim().TrimEnd('/');
+    if (!baseUrl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) &&
+        !baseUrl.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
     {
-        var baseUrl = storeUrl.Trim().TrimEnd('/');
-        if (!baseUrl.StartsWith("http://", StringComparison.OrdinalIgnoreCase) &&
-            !baseUrl.StartsWith("https://", StringComparison.OrdinalIgnoreCase))
-        {
-            baseUrl = "https://" + baseUrl;
-        }
-
-        var sep = route.Contains('?') ? "&" : "?";
-        return $"{baseUrl}/wp-json/woorack/v2{route}{sep}token={Uri.EscapeDataString(token.Trim())}";
+        baseUrl = "https://" + baseUrl;
     }
+
+    var cleanRoute = route.Trim().TrimStart('/');
+    var sep = cleanRoute.Contains('?') ? "&" : "?";
+    return $"{baseUrl}/wp-json/woorack/v2/{cleanRoute}{sep}token={Uri.EscapeDataString(token.Trim())}";
+}
 
     public async Task RegisterAgentAsync(AgentConfig config, List<string> printers, CancellationToken ct)
     {
@@ -43,7 +45,7 @@ public class PrintApiClient
         if (!response.IsSuccessStatusCode)
         {
             var body = await response.Content.ReadAsStringAsync(ct);
-            throw new HttpRequestException($"HTTP {(int)response.StatusCode}: {body}");
+            throw new HttpRequestException($"HTTP {(int)response.StatusCode} ({url}): {body}");
         }
     }
 
